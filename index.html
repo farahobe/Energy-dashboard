@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Energy Management Dashboard</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<h1>Energy Management Dashboard</h1>
+
+<!-- Real-time Section -->
+<section>
+  <h2>Real-time Consumption <span class="live">●</span></h2>
+  <div id="current-total">Total: 0 W</div>
+  <table id="current-table">
+    <thead>
+    <tr><th>Device</th><th>Value (W)</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</section>
+
+<!-- History Section -->
+<section>
+  <h2>Historical Data</h2>
+  <div class="controls">
+    <label for="hist-device">Device:</label>
+    <select id="hist-device">
+      <option value="ALL">All Devices</option>
+    </select>
+
+    <label for="hist-period">Time Period:</label>
+    <select id="hist-period">
+      <option value="1h">Last 1 Hour</option>
+      <option value="24h" selected>Last 24 Hours</option>
+    </select>
+  </div>
+
+  <table id="hist-table">
+    <thead>
+    <tr><th>Time</th><th>Value (W)</th></tr>
+    </thead>
+    <tbody>
+    <tr><td colspan="2">No data</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- Analysis Section -->
+<section>
+  <h2>Energy Analysis</h2>
+  <div class="controls">
+    <label for="analysis-device">Device:</label>
+    <select id="analysis-device">
+      <option value="ALL">All Devices</option>
+    </select>
+
+    <label for="analysis-type">Analysis Type:</label>
+    <select id="analysis-type">
+      <option value="average" selected>Average Consumption</option>
+      <option value="peak">Peak Consumption</option>
+      <option value="saving">Savings Potential</option>
+    </select>
+
+    <label for="analysis-period">Time Period:</label>
+    <select id="analysis-period">
+      <option value="24h" selected>Last 24 Hours</option>
+      <option value="7d">Last 7 Days</option>
+    </select>
+  </div>
+
+  <div id="analysis-output">No analysis</div>
+</section>
+
+<script type="module" src="./dist/app.js"></script>
+</body>
+</html>

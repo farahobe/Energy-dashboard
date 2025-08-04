@@ -1,0 +1,8 @@
+body { font-family: sans-serif; background: #f0f4ff; margin: 1rem; }
+section { background: white; padding: 1rem; margin-bottom: 1rem; border-radius: .5rem; }
+h2 { color: #3b3fcc; }
+.live { color: green; }
+.controls { display: flex; gap: 1rem; margin-bottom: .5rem; flex-wrap: wrap; }
+table { width: 100%; border-collapse: collapse; margin-top: .5rem; }
+th, td { border: 1px solid #ccc; padding: .5rem; text-align: left; }
+tbody tr:nth-child(odd) { background: #eef; }

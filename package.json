@@ -1,0 +1,13 @@
+{
+  "name": "energy-dashboard",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "npm run build && live-server"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "live-server": "^1.2.1"
+  }
+}
